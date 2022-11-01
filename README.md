@@ -23,4 +23,13 @@ sudo sh ./KubernetesWithUbuntu/script/k8s-worker.sh
 
 ```bash
 sudo sh ./KubernetesWithUbuntu/script/k8s-minikube.sh
+
+# get helm
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+# enable helm
+minikube addons list
+minikube addons enable helm-tiller
 ```
