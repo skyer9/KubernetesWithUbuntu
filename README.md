@@ -23,7 +23,15 @@ sudo sh ./KubernetesWithUbuntu/script/k8s-worker.sh
 
 ```bash
 sudo sh ./KubernetesWithUbuntu/script/k8s-minikube.sh
+```
 
+로그아웃 후 재접속 후 아래 명령을 실행해 줍니다.
+
+```bash
+minikube start
+```
+
+```bash
 # get helm
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
